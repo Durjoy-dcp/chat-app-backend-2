@@ -16,6 +16,7 @@ const UserModels = mongoose.Schema(
     },
     pic: {
       type: String,
+
       default: "https://i.ibb.co/sWgFNk2/2023-03-27-15-43.png",
     },
   },
@@ -23,3 +24,5 @@ const UserModels = mongoose.Schema(
     timestamps: true,
   }
 );
+const User = mongoose.model("User", UserModels);
+module.exports = User;

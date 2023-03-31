@@ -6,7 +6,8 @@ const msgModels = mongoose.Schema(
       ref: "User",
     },
     content: {
-      type: String,
+      type: "String",
+
       trim: true,
     },
     chats: {
